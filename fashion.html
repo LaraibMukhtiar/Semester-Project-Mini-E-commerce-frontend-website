@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fashion</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.category-products{
+  display:none;
+  margin-top:40px;
+}
+.category-products.active{
+  display:block;
+}
+.category-products h2{
+  margin-bottom:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="top-header">
+  <div class="header-inner">
+    <div class="logo">BeautyStore</div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search products">
+      <button>Search</button>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="product.html">Product</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="login.html">Login</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= CATEGORIES ================= -->
+<div class="container">
+<h2>Fashion Categories</h2>
+
+<div class="products">
+
+  <div class="card featured-card">
+    <img src="images/clothes.jpg">
+    <h3>Clothes</h3>
+    <a href="#" onclick="showCategory('clothes')">View</a>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/footwear.jpg">
+    <h3>Footwear</h3>
+    <a href="#" onclick="showCategory('footwear')">View</a>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/jewelry.jpg">
+    <h3>Jewelry</h3>
+    <a href="#" onclick="showCategory('jewelry')">View</a>
+  </div>
+
+</div>
+
+<!-- ================= CLOTHES SECTION ================= -->
+<div id="clothes" class="category-products">
+<h2>Clothes Collection</h2>
+
+<div class="products">
+
+  <div class="card featured-card">
+    <img src="images/cloth1.jpg">
+    <h4>Casual Shirt</h4>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/cloth2.jpg">
+    <h4>Formal Suit</h4>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/cloth3.jpg">
+    <h4>Summer Dress</h4>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/cloth4.jpg">
+    <h4>Denim Jacket</h4>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/cloth5.jpg">
+    <h4>Hoodie</h4>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/cloth6.jpg">
+    <h4>Kurti</h4>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/cloth7.jpg">
+    <h4>Jeans</h4>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/cloth8.jpg">
+    <h4>Skirt</h4>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/cloth9.jpg">
+    <h4>Blazer</h4>
+  </div>
+
+  <div class="card featured-card">
+    <img src="images/cloth10.jpg">
+    <h4>T-Shirt</h4>
+  </div>
+
+</div>
+</div>
+
+<!-- ================= FOOTWEAR ================= -->
+<div id="footwear" class="category-products">
+<h2>Footwear Collection</h2>
+<div class="products">
+  <div class="card featured-card"><img src="images/shoe1.jpg"><h4>Sneakers</h4></div>
+  <div class="card featured-card"><img src="images/shoe2.jpg"><h4>Heels</h4></div>
+</div>
+</div>
+
+<!-- ================= JEWELRY ================= -->
+<div id="jewelry" class="category-products">
+<h2>Jewelry Collection</h2>
+<div class="products">
+  <div class="card featured-card"><img src="images/jewel1.jpg"><h4>Necklace</h4></div>
+  <div class="card featured-card"><img src="images/jewel2.jpg"><h4>Earrings</h4></div>
+</div>
+</div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="main-footer">
+  <div class="footer-bottom">
+    © 2025 BeautyStore. All rights reserved.
+  </div>
+</footer>
+
+<script>
+function showCategory(id){
+  document.querySelectorAll('.category-products')
+    .forEach(sec => sec.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>

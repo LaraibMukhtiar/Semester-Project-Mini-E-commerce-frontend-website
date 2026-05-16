@@ -1,0 +1,211 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f5f5f5;
+}
+
+/* Header */
+.top-header{
+  background:#ff6801;
+  color:white;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.top-header a{
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* Banner */
+.banner{
+  width:100%;
+  height:400px;        /* yahan height adjust karo */
+  overflow:hidden;
+}
+
+.banner video{
+  width:100%;
+  height:100%;
+  object-fit:cover;  /* 🔥 video full show hogi */
+  background:black;    /* empty space black */
+}
+
+
+/* Layout */
+.container{
+  width:90%;
+  margin:30px auto;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+/* Cards */
+.card{
+  background:white;
+  padding:15px;
+  text-align:center;
+  border-radius:10px;
+}
+
+.card img{
+  width:100%;
+  height:450px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+/* Featured */
+.featured-card{
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card a{
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 15px;
+  background:#ff6801;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+}
+
+/* Footer */
+footer{
+  background:#000;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+/* ================= HEADER INNER (NEW) ================= */
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+/* SEARCH BAR */
+.search-bar{
+  display:flex;
+  gap:5px;
+}
+
+.search-bar input{
+  padding:8px 10px;
+  border:none;
+  border-radius:4px;
+  width:200px;
+}
+
+.search-bar button{
+  padding:8px 12px;
+  background:#000;
+  color:#fff;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+/* ================= PINTEREST STYLE FOOTER ================= */
+.main-footer{
+  background:#111;
+  color:#fff;
+  padding:40px 20px;
+  margin-top:50px;
+}
+
+.footer-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:30px;
+}
+
+.footer-column h4{
+  margin-bottom:15px;
+}
+
+.footer-column a{
+  display:block;
+  color:#ccc;
+  text-decoration:none;
+  margin-bottom:8px;
+}
+
+.footer-column a:hover{
+  color:#ff69b4;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:30px;
+  font-size:14px;
+  color:#aaa;
+}
+
+/* ================= SOCIAL LINKS ================= */
+.social-links{
+  margin-top:10px;
+}
+
+.social-links a{
+  display:inline-block;
+  margin-right:12px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.social-links a:hover{
+  color:#ff69b4;
+}
+/* ================= NAV RIGHT FIX ================= */
+.top-header nav{
+  margin-left:auto;
+}
+
+/* ================= LOGO STYLING ================= */
+.logo{
+  font-size:26px;
+  font-weight:800;
+  letter-spacing:-1px;
+  text-transform:uppercase;
+}
+
+.logo-icon{
+  margin-right:6px;
+}
+
+/* ================= SEARCH BAR ALIGN LEFT ================= */
+.search-bar{
+  order:1;
+}
+
+.logo{
+  order:2;
+}
+
+.top-header nav{
+  order:3;
+}
+
+/* ================= SOCIAL ICONS STYLE ================= */
+.social-links a{
+  font-size:22px;
+}
+
